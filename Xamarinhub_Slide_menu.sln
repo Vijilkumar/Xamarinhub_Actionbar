@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarinhub_Actionbar", "Xamarinhub_Actionbar\Xamarinhub_Actionbar.csproj", "{5F01600F-F122-4C9E-8222-2A57FC5C6359}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarinhub_Slide_menu", "Xamarinhub_Actionbar\Xamarinhub_Slide_menu.csproj", "{5F01600F-F122-4C9E-8222-2A57FC5C6359}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
