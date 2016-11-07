@@ -2,13 +2,13 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">Xamarinhub_Actionbar</string>
-    <string name="Home">Home</string>
-    <string name="AboutUs">About us</string>
-    <string name="Products">Products</string>
-    <string name="Events">Events</string>
-    <string name ="Serivce">Events</string>
-    <string name="Clients">Clients</string>
-    <string name="Help">Help</string>
-    <string name="Solution">Solution</string>
-    <string name="ContactUs">ContactUs</string>
+    <string name="Home">Option 1</string>
+    <string name="AboutUs">Option 2</string>
+    <string name="Products">Option 3</string>
+    <string name="Events">Option 4</string>
+    <string name ="Serivce">Option 5</string>
+    <string name="Clients">Option 6</string>
+    <string name="Help">Option 7</string>
+    <string name="Solution">Option 8</string>
+    <string name="ContactUs">Option 8</string>
 </resources>

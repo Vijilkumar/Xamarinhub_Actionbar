@@ -14,7 +14,7 @@ namespace Xamarinhub_Actionbar
     public class MainActivity : Activity
     {
 
-        GestureDetector gestureDetector;
+        GestureDetector gestureDetector;//Declaring variables,objects etc
         GestureListener gestureListener;
 
         ListView menuListView;
@@ -31,7 +31,7 @@ namespace Xamarinhub_Actionbar
             base.OnCreate(bundle);
             Window.RequestFeature(WindowFeatures.NoTitle);
             SetContentView(Resource.Layout.Main);
-            FnInitialization();
+            FnInitialization();// Initializing gestures 
             TapEvent();
             FnBindMenu(); //find definition in below steps
         }
@@ -54,8 +54,8 @@ namespace Xamarinhub_Actionbar
         }
         void FnInitialization()
         {
-            //gesture initialization
-            gestureListener = new GestureListener();
+            
+            gestureListener = new GestureListener();// object for accepting gestures from user
             gestureListener.LeftEvent += GestureLeft; //find definition in below steps
             gestureListener.RightEvent += GestureRight;
             gestureListener.SingleTapEvent += SingleTap;
@@ -83,6 +83,8 @@ namespace Xamarinhub_Actionbar
         }
         void FnBindMenu()
         {
+            // set menu options and corresponding icons, options should be specified in String.xml and icons
+            // should be available in drawable folder 
             string[] strMnuText = { GetString(Resource.String.Home), GetString(Resource.String.AboutUs), GetString(Resource.String.Products), GetString(Resource.String.Events), GetString(Resource.String.Serivce), GetString(Resource.String.Clients), GetString(Resource.String.Help), GetString(Resource.String.Solution), GetString(Resource.String.ContactUs) };
             int[] strMnuUrl = { Resource.Drawable.Icon, Resource.Drawable.Icon, Resource.Drawable.Icon, Resource.Drawable.Icon, Resource.Drawable.Icon, Resource.Drawable.Icon, Resource.Drawable.Icon, Resource.Drawable.Icon, Resource.Drawable.Icon };
             if (objAdapterMenu != null)
@@ -131,6 +133,7 @@ namespace Xamarinhub_Actionbar
         }
         void FnToggleMenu()
         {
+            // implementing animation in list view
             Console.WriteLine(menuListView.IsShown);
             if (menuListView.IsShown)
             {
